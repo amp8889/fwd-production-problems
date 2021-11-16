@@ -29,6 +29,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
 
+display: flex;
+flex-direction: row-reverse;
+justify-content: flex-end;
+
 
 }
 
@@ -36,15 +40,45 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
 
-  display: flex;
-  flex-direction: row-reverse;
+  height: 30vw;
+  width: 30vw;
 
 }
 
 @media screen and (min-width: 600px) {
 
+  #one,
+  #two {
+
+    width: 50%;
+    height: 50vw;
+  }
+
+  #three {
+
+    width: 100%;
+  }
+
+  #content {
+
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
 }
+
+
+
+
 
 @media screen and (min-width: 800px) {
 
+  #one,
+  #two,
+  #three {
+    width: 33.33333333333%;
+    height: 33vw;
+  }
+  #content {
+    flex-direction: row-reverse;
+  }
 }
