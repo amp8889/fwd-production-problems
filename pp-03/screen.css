@@ -29,9 +29,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
 
-display: flex;
-flex-direction: row-reverse;
-justify-content: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 
 
 }
@@ -75,10 +75,13 @@ justify-content: flex-end;
   #one,
   #two,
   #three {
+
     width: 33.33333333333%;
     height: 33vw;
   }
+
   #content {
+
     flex-direction: row-reverse;
   }
 }
